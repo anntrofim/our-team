@@ -1,0 +1,260 @@
+$yellow: #ffcc00;
+$blue: #49aee8;
+$gray: #666666;
+
+body {
+	font-family: sans-serif;
+}
+
+.card {
+	position: relative;
+
+	&__title-cont {
+		display: flex;
+		flex-direction: column;
+		width: 50%;
+		margin: 0 auto;
+		text-align: center;
+	}
+
+	&__title {
+		font-family: 'Roboto', sans-serif;
+		order: 2;
+		text-transform: uppercase;
+		color: $yellow;
+		margin-top: 0;
+		font-size: 50px;
+
+	}
+	&__subtitle {
+		font-family: 'Raleway', sans-serif;
+		font-weight: 500;
+		order: 1;
+		font-size: 16px;
+		text-transform: uppercase;
+		color: $gray;
+		font-weight: normal;
+		margin-bottom: 0;
+	}
+
+	&__hor-devider {
+		width: 30%;
+		height: 1px;
+		display: flex;
+		margin: 0 auto;
+		background: linear-gradient(to left, $yellow 45%, #fff 45%, #fff 55%, $yellow 55%);
+	}
+
+	&__bonfire {
+		margin: 0 auto;
+		font-size: 25px;
+		color: $yellow;
+		position: relative;
+		bottom: 12px;
+		transition: all .5s ease;
+
+		&:hover {
+			font-size: 30px;
+			transition: all .5s ease;
+		}
+	}
+
+	&__ver-devider {
+		height: 65%;
+		border-left: 1px solid $yellow;
+		position: absolute;
+		left: 50%;
+		right: 50%;
+		top: 180px;
+	}
+
+	&__person {
+		position: relative;
+		display: flex;
+		top: 40px;
+		width: 80%;
+		margin: 0 auto;
+	}
+
+	&__arrow {
+		align-self: center;
+		font-size: 30px;
+		color: $yellow;
+		transition: all .5s ease;
+		cursor: pointer;
+
+		&:hover {
+			transform: scale(1.5);
+			transition: all .5s ease;
+		}
+	}
+
+	&__view {
+		box-sizing: border-box;
+		width: 50%;
+		display: flex;
+		align-items: center;
+		justify-content: center;
+	}
+
+	&__inner-border {
+		position: relative;
+		background-image: url(images/photo.png);
+		background-size: cover;
+		border: 1px solid $yellow;
+		width: 20vw;
+		height: 20vw;
+		cursor: pointer;
+		transition: all .5s ease;
+
+		&:hover {
+			transform: scale(1.05);
+			transition: all .5s ease;
+		}
+	}
+
+	&__outer-border {
+		position: absolute;
+		width: 30%;
+		height: 30%;
+
+		&--tl {
+			top: -10px;
+			left: -10px;
+			border-top: 1px solid $yellow;
+			border-left: 1px solid $yellow;
+		}
+
+		&--tr {
+			top: -10px;
+			right: -10px;
+			border-top: 1px solid $yellow;
+			border-right: 1px solid $yellow;
+		}
+
+		&--bl {
+			bottom: -10px;
+			left: -10px;
+			border-bottom: 1px solid $yellow;
+			border-left: 1px solid $yellow;
+		}
+
+		&--br {
+			bottom: -10px;
+			right: -10px;
+			border-bottom: 1px solid $yellow;
+			border-right: 1px solid $yellow;
+		}
+	}
+
+	&__info-cont {
+		font-family: 'Raleway', sans-serif;
+		box-sizing: border-box;
+		width: 50%;
+		padding: 40px 80px;
+		color: $gray;
+		text-align: center;
+	}
+
+	&__name {
+		font-family: 'Roboto', sans-serif;
+	}
+
+	&__hor-devider-1 {
+		width: 70px;
+		border-bottom: 1px solid $yellow;
+		margin: 0 auto;
+	}
+
+	&__position {
+		font-weight: normal;
+	}
+
+	&__socials {
+
+	}
+
+	&__logo {
+		display: inline-block;
+		width: 25px;
+		height: 25px;
+		filter: grayscale(100%);
+		cursor: pointer;
+		transition: all .5s ease;
+		background-size: contain;
+		background-repeat: no-repeat;
+
+		&:hover {
+			filter: grayscale(0%);
+			transition: all .5s ease;
+		}
+
+		&--fb {
+			background-image: url(images/fb.png);
+		}
+
+		&--tw {
+			background-image: url(images/tw.png);
+		}
+
+		&--gl {
+			background-image: url(images/gl.png);
+		}
+
+		&--in {
+			background-image: url(images/in.png);
+		}
+	}
+
+	&__description {
+		font-weight: 500;
+		font-size: 14px;
+	}
+
+	&__hor-devider-2 {
+		width: 40px;
+		border-bottom: 3px dashed $yellow;
+		margin: 0 auto;
+	}
+
+	&__btn {
+		font-family: 'Open Sans', sans-serif;
+		margin: 20px 0;
+		background-color: transparent;
+		border: 1px solid $yellow;
+		color: $gray;
+		font-weight: bold;
+		text-transform: uppercase;
+		padding: 5px 15px;
+		cursor: pointer;
+		transition: all .5s ease;
+
+		&:hover {
+			background-color: $yellow;
+			transition: all .5s ease;
+		}
+	}
+
+	&__slider {
+		text-align: center;
+		width: 60px;
+		margin: 60px auto 0;
+	}
+
+	&__dot {
+		position: relative;
+		z-index: 1;
+		display: inline-block;
+		width: 10px;
+		height: 10px;
+		border-radius: 50%;
+		border: 1px solid $yellow;
+		cursor: pointer;
+
+		&:hover {
+			background-color: $yellow;
+		}
+	}
+
+}
+

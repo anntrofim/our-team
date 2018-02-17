@@ -1,0 +1,229 @@
+body {
+  font-family: sans-serif; }
+
+.card {
+  position: relative; }
+  .card__title-cont {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    text-align: center; }
+  .card__title {
+    font-family: 'Roboto', sans-serif;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    text-transform: uppercase;
+    color: #ffcc00;
+    margin-top: 0;
+    font-size: 50px; }
+  .card__subtitle {
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    -webkit-box-ordinal-group: 2;
+    -ms-flex-order: 1;
+    order: 1;
+    font-size: 16px;
+    text-transform: uppercase;
+    color: #666666;
+    font-weight: normal;
+    margin-bottom: 0; }
+  .card__hor-devider {
+    width: 30%;
+    height: 1px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+    background: -webkit-gradient(linear, right top, left top, color-stop(45%, #ffcc00), color-stop(45%, #fff), color-stop(55%, #fff), color-stop(55%, #ffcc00));
+    background: -webkit-linear-gradient(right, #ffcc00 45%, #fff 45%, #fff 55%, #ffcc00 55%);
+    background: -o-linear-gradient(right, #ffcc00 45%, #fff 45%, #fff 55%, #ffcc00 55%);
+    background: linear-gradient(to left, #ffcc00 45%, #fff 45%, #fff 55%, #ffcc00 55%); }
+  .card__bonfire {
+    margin: 0 auto;
+    font-size: 25px;
+    color: #ffcc00;
+    position: relative;
+    bottom: 12px;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+    .card__bonfire:hover {
+      font-size: 30px;
+      -webkit-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease; }
+  .card__ver-devider {
+    height: 65%;
+    border-left: 1px solid #ffcc00;
+    position: absolute;
+    left: 50%;
+    right: 50%;
+    top: 180px; }
+  .card__person {
+    position: relative;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    top: 40px;
+    width: 80%;
+    margin: 0 auto; }
+  .card__arrow {
+    -ms-flex-item-align: center;
+    align-self: center;
+    font-size: 30px;
+    color: #ffcc00;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    cursor: pointer; }
+    .card__arrow:hover {
+      -webkit-transform: scale(1.5);
+      -ms-transform: scale(1.5);
+      transform: scale(1.5);
+      -webkit-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease; }
+  .card__view {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center; }
+  .card__inner-border {
+    position: relative;
+    background-image: url(images/photo.png);
+    background-size: cover;
+    border: 1px solid #ffcc00;
+    width: 20vw;
+    height: 20vw;
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+    .card__inner-border:hover {
+      -webkit-transform: scale(1.05);
+      -ms-transform: scale(1.05);
+      transform: scale(1.05);
+      -webkit-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease; }
+  .card__outer-border {
+    position: absolute;
+    width: 30%;
+    height: 30%; }
+    .card__outer-border--tl {
+      top: -10px;
+      left: -10px;
+      border-top: 1px solid #ffcc00;
+      border-left: 1px solid #ffcc00; }
+    .card__outer-border--tr {
+      top: -10px;
+      right: -10px;
+      border-top: 1px solid #ffcc00;
+      border-right: 1px solid #ffcc00; }
+    .card__outer-border--bl {
+      bottom: -10px;
+      left: -10px;
+      border-bottom: 1px solid #ffcc00;
+      border-left: 1px solid #ffcc00; }
+    .card__outer-border--br {
+      bottom: -10px;
+      right: -10px;
+      border-bottom: 1px solid #ffcc00;
+      border-right: 1px solid #ffcc00; }
+  .card__info-cont {
+    font-family: 'Raleway', sans-serif;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+    width: 50%;
+    padding: 40px 80px;
+    color: #666666;
+    text-align: center; }
+  .card__name {
+    font-family: 'Roboto', sans-serif; }
+  .card__hor-devider-1 {
+    width: 70px;
+    border-bottom: 1px solid #ffcc00;
+    margin: 0 auto; }
+  .card__position {
+    font-weight: normal; }
+  .card__logo {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease;
+    background-size: contain;
+    background-repeat: no-repeat; }
+    .card__logo:hover {
+      -webkit-filter: grayscale(0%);
+      filter: grayscale(0%);
+      -webkit-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease; }
+    .card__logo--fb {
+      background-image: url(images/fb.png); }
+    .card__logo--tw {
+      background-image: url(images/tw.png); }
+    .card__logo--gl {
+      background-image: url(images/gl.png); }
+    .card__logo--in {
+      background-image: url(images/in.png); }
+  .card__description {
+    font-weight: 500;
+    font-size: 14px; }
+  .card__hor-devider-2 {
+    width: 40px;
+    border-bottom: 3px dashed #ffcc00;
+    margin: 0 auto; }
+  .card__btn {
+    font-family: 'Open Sans', sans-serif;
+    margin: 20px 0;
+    background-color: transparent;
+    border: 1px solid #ffcc00;
+    color: #666666;
+    font-weight: bold;
+    text-transform: uppercase;
+    padding: 5px 15px;
+    cursor: pointer;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+    .card__btn:hover {
+      background-color: #ffcc00;
+      -webkit-transition: all .5s ease;
+      -o-transition: all .5s ease;
+      transition: all .5s ease; }
+  .card__slider {
+    text-align: center;
+    width: 60px;
+    margin: 60px auto 0; }
+  .card__dot {
+    position: relative;
+    z-index: 1;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    border: 1px solid #ffcc00;
+    cursor: pointer; }
+    .card__dot:hover {
+      background-color: #ffcc00; }
